@@ -29,7 +29,7 @@
       "description":"Chrome is reported to incorrectly calculate the container height, and often breaks on margins, padding, and can display 1px of the next column at the bottom of the previous column. Part of these issues can be solved by adding `-webkit-perspective:1;` to the column container. This creates a new stacking context for the container, and apparently causes chrome to (re)calculate column layout.\r\n"
     },
     {
-      "description":"Browsers behave differently when flowing `ol` list numbers in columns: IE and Safari only show numbers for the first column. Chrome does not show any numbers. Only Firefox behaves as expected with numbers showing for all items."
+      "description":"Browsers behave differently when flowing `ol` list numbers in columns: IE and Safari only show numbers for the first column. Chrome has numbers for all columns but they are hidden by the gap in subsequent columns (increasing `column-gap` reveals them). Only Firefox behaves as expected with numbers showing for all items."
     },
     {
       "description":"IE has been reported to incorrectly break on elements across columns when having more than 3 columns.\r\n"
